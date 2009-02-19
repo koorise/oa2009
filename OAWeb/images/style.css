@@ -1,0 +1,40 @@
+.BODY{FONT-SIZE: 14px;COLOR: #000000;FONT-FAMILY:  ËÎÌו;
+	scrollbar-face-color: #EDEDF3;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #93949F;
+	scrollbar-3dlight-color: #EDEDF3;
+	scrollbar-arrow-color: #082468;
+	scrollbar-track-color: #F7F7F9;
+	scrollbar-darkshadow-color: #EDEDF3;
+	background-color:#f2f2f2;}
+a:link {  color: #000000;text-decoration:none;LINE-HEIGHT:4.5mm}
+a:visited {  color: #000000;text-decoration:none;LINE-HEIGHT:4.5mm}
+a:hover {  color: #003399;LINE-HEIGHT:4.5mm}
+input 
+{
+	font-size: 12px;
+	text-decoration: none;
+	border: 1px solid #B76010;
+	background-color: #FFFFFF;
+	height:21px;
+}
+.title {  color: #000000; background-color: #94b6e7; border-color: #FFFFFF #000000 #000000 #FFFFFF; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+
+.LeftTopBorder{  border-color: #000000 black black #000000; border-style: solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 1px}
+.RightBottomBorder{  border-color: #000000 black black #000000; border-style: solid; border-top-width: 0px; border-right-width:1px; border-bottom-width: 1px; border-left-width: 0px}
+.Titlebg {BACKGROUND-IMAGE: url(titlebg.gif); HEIGHT: 25px;}
+.Titlebg1 {BACKGROUND-IMAGE: url(nav_bg.gif); HEIGHT: 25px}
+.TableCss {BORDER-COLOR: #0a7ec7;BORDER-COLLAPSE: collapse;border-width:"3mm"}
+Table{word-break:break-all;LINE-HEIGHT:4.5mm;FONT-SIZE: 14px;COLOR: #000000;FONT-FAMILY:  ËÎÌו;}
+
+
+
+.3d {border-color: #FFFFFF #000000 #000000 #FFFFFF; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.3ddown {  border-color: #000000 #FFFFFF #FFFFFF #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+
+.TR1{ cursor:default; background-COLOR: #E6FAFF}
+.TR2{ cursor:default; background-COLOR: #FEFAEB}
+.TR3{ cursor:hand; background-COLOR: #F0FFE9}
+.TR4{ cursor:hand; background-COLOR: #FFDBDB}
+.TR5{ cursor:hand; background-COLOR: #b9c7e5}
+.TR6{ cursor:hand}

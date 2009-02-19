@@ -1,0 +1,20 @@
+a, a:visited {text-decoration: none; color: #223399;}
+A:hover	{text-decoration: underline; color: #ff5555;}
+H4{
+	font-size:16px;
+	font-weight:bold;
+	margin-left:0;
+}
+body{
+	font-size:12px;
+	text-indent:2em;
+}
+p{
+	font-size:12px;
+}
+LI{
+	font-size:12px;
+	text-indent:-2em;
+	margin-left:4em;
+	margin-right:2em;
+}

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<Table>
+  <jxt>
+    <FieldName>UserName</FieldName>  
+    <Comment>用户姓名</Comment>
+    <Control>TextBox</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>Mobile</FieldName>  
+    <Comment>手机号码</Comment>
+    <Control>TextBox</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>RoleName</FieldName>  
+    <Comment>角色</Comment>
+    <Control>TextBox</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>ShiftName</FieldName>  
+    <Comment>轮班名称</Comment>
+    <Control>TextBox</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>CardAddress</FieldName>  
+    <Comment>卡地址</Comment>
+    <Control>TextBox</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>IsStop</FieldName>  
+    <Comment>是否停用</Comment>
+    <Control>dropdownlist</Control>
+    <DDLTable>select '0','否' union all select '1','是'</DDLTable>
+  </jxt>
+</Table>

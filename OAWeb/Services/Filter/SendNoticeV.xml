@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<Table>
+  <jxt>
+    <FieldName>UserName</FieldName>  
+    <Comment>发送人</Comment>
+    <Control>TextBox</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>SendTime</FieldName>  
+    <Comment>发送时间</Comment>
+    <Control>datetime</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>Title</FieldName>  
+    <Comment>标题</Comment>
+    <Control>TextBox</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>SendType</FieldName>  
+    <Comment>类别</Comment>
+    <Control>dropdownlist</Control>
+    <DDLTable>select '普通','普通' union all select '重要','重要'</DDLTable>
+  </jxt>
+</Table>

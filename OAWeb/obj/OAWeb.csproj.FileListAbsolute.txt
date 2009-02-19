@@ -1,0 +1,5 @@
+E:\MyJob\新OA系统\OAWeb\bin\OAWeb.dll
+E:\MyJob\新OA系统\OAWeb\bin\OAWeb.pdb
+E:\MyJob\新OA系统\OAWeb\obj\Debug\ResolveAssemblyReference.cache
+E:\MyJob\新OA系统\OAWeb\obj\Debug\OAWeb.dll
+E:\MyJob\新OA系统\OAWeb\obj\Debug\OAWeb.pdb

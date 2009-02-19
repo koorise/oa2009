@@ -1,0 +1,96 @@
+a {
+        color: #414141;
+        text-decoration: none;
+}
+a:active
+{
+        color: #3366CC;
+}
+BODY
+{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: left;
+	text-decoration: none;
+	background-color: #F0E8D8;
+	overflow-y: auto;
+	scrollbar-face-color: #EDEDF3;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #93949F;
+	scrollbar-3dlight-color: #EDEDF3;
+	scrollbar-arrow-color: #082468;
+	scrollbar-track-color: #F7F7F9;
+	scrollbar-darkshadow-color: #EDEDF3;
+}
+
+.Button
+{
+	border-right: #9999ff 1px solid;
+	padding-right: 4px;
+	border-top: #9999ff 1px solid;
+	padding-left: 4px;
+	font-weight: normal;
+	background-image: url(../Images/btn_bg_on.gif);
+	padding-bottom: 0px;
+	margin: 0px;
+	vertical-align: baseline;
+	border-left: #9999ff 1px solid;
+	cursor: hand;
+	color: #000000;
+	padding-top: 0px;
+	border-bottom: #9999ff 1px solid;
+	background-repeat: repeat-x;
+	height: 20px;
+	background-color: transparent;
+	text-align: center;
+}
+/************************************DatePicker Style End***************************************/
+.DatePicker_Text
+{   
+	font-size: 12px;
+	font-family: MS Sans Serif; 
+	padding: 4px;
+	font-weight: normal;
+	padding-bottom: 1px;
+	margin: 0px;
+	padding-top: 3px;
+	letter-spacing: 1px;
+	height: 20px;
+}
+.DatePicker_Button
+{
+	background-image: url(../Images/DatePicker/BIMG.gif);
+	border-left: 0px solid;
+	width: 22px;
+	height: 20px;
+	CURSOR: hand;
+}
+.DatePicker_DisText
+{
+	border-color :#0875B6;
+	font-size: 12px;
+	font-family: MS Sans Serif; 
+	padding: 4px;
+	font-weight: normal;
+	padding-bottom: 1px;
+	margin: 0px;
+	padding-top: 3px;
+	letter-spacing: 1px;
+	height: 20px;
+	FILTER:gray();
+	COLOR: graytext; 
+	CURSOR: default;
+}
+.DatePicker_DisButton
+{
+	background-image: url(../Images/DatePicker/BIMG.gif);
+	border-left: 0px solid;
+	width: 22px;
+	height: 20px;
+	FILTER:gray();
+	COLOR: graytext; 
+	CURSOR: default;
+}
+
+/************************************DatePicker Style End***************************************/
