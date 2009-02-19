@@ -1,0 +1,24 @@
+body {SCROLLBAR-FACE-COLOR: #FFFfff; SCROLLBAR-HIGHLIGHT-COLOR: #9e9e9e; SCROLLBAR-SHADOW-COLOR: 
+#9e9e9e; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #9e9e9e; SCROLLBAR-TRACK-COLOR: 
+#eaeaea; SCROLLBAR-DARKSHADOW-COLOR: #eaeaea; margin-top: 7px; margin-left: 9px} 
+select { font-family: "ËÎÌו"; font-size: 9pt;background-color: #F5FAFE; color: #333300} 
+A:link { TEXT-DECORATION: none; ; color: #5F506D} A:visited { COLOR: #5F506D; 
+TEXT-DECORATION: none; } A:hover { COLOR: #5F506D; TEXT-DECORATION: underline 
+overline; } .table_windows { background-color: #D8D8D0; border-left: 2 solid #ffffff;border-right: 
+2 solid #666666; border-top: 2 solid #ffffff; border-bottom: 2 solid #666666; 
+border-color: #FFFFFF #666666 #666666 #FFFFFF; border-top-width: 2px; border-right-width: 
+2px; border-bottom-width: 2px; border-left-width: 2px}p { font-size: 12px; color: 
+#333300}.font_dropshadow{ FILTER: dropshadow(color=#F2F8DA,offx=1,offy=1);}p { 
+font-size: 10pt; color: #666600} td { font-size: 10pt; color: #5F506D}.table_dropshadow{FILTER: 
+dropshadow(color=#EDEDF8,offx=3.3,offy=3.3,positive=1);} .table_3d{padding-left:3px;padding-right:3px;padding-top:0px;padding-bottom:0px;border-left: 
+1 solid #ffffff;border-right: 1 solid #666666; border-top: 1 solid #ffffff; border-bottom: 
+1 solid #666666;cursor:hand; } .table_no{ border-left: 1 solid #f1f1f1;border-right: 
+1 solid #f1f1f1; border-top: 1 solid #f1f1f1; border-bottom: 1 solid #f1f1f1 } 
+.table_dashed { border: 1px dashed #333333; background-color: #FFF3E8} th { clip: 
+rect( ); height: 20px; background-color: #7EA2E2; filter: dropshadow(color=#ffffff,offx=1,offy=1);font-size: 14px;} 
+tr { height: 20px} .table_head_font { font-size: 14px; color: 
+#ffffff} a:active { text-decoration: underline overline; color: #5F506D} .alpha 
+{ filter: Alpha(Opacity=0, FinishOpacity=100, Style=1, StartX=0, StartY=0, FinishX=780, 
+FinishY=0)} .tableBorder { BORDER-RIGHT: #8EA525 1px solid; BORDER-TOP: #8EA525 
+1px solid; BORDER-LEFT: #8EA525 1px solid; BORDER-BOTTOM: #8EA525 1px solid; BACKGROUND-COLOR: 
+#ffffff }

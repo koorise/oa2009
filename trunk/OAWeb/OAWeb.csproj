@@ -1,0 +1,916 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72F8A169-0E28-4F45-85BA-2FCBC0963DB4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OAWeb</RootNamespace>
+    <AssemblyName>OAWeb</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL" />
+    <Reference Include="FredCK.FCKeditorV2, Version=2.2.2106.29420, Culture=neutral, PublicKeyToken=4f86767c9b519a06" />
+    <Reference Include="msplus.datepicker, Version=1.1.906.0, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Extensions\1.0.61025.0__31bf3856ad364e35\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="XCProf, Version=0.0.0.0, Culture=neutral" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\CSS\Default.CSS" />
+    <Content Include="Common\Images\btn_bg_off.gif" />
+    <Content Include="Common\Images\btn_bg_on.gif" />
+    <Content Include="Common\Images\DatePicker\BIMG.gif" />
+    <Content Include="Common\Images\DatePicker\close.gif" />
+    <Content Include="Common\Images\DatePicker\None.gif" />
+    <Content Include="Common\Images\DatePicker\Today.gif" />
+    <Content Include="Common\JavaScript\Copy of DatePicker.js" />
+    <Content Include="Common\JavaScript\DatePicker.js" />
+    <Content Include="css\blue.css" />
+    <Content Include="css\css.css" />
+    <Content Include="css\help.css" />
+    <Content Include="css\ioffice.css" />
+    <Content Include="css\iofficeCN5.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\logo.css" />
+    <Content Include="css\oa.css" />
+    <Content Include="css\Styles.css" />
+    <Content Include="css\tree.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\001-1_01_01.jpg" />
+    <Content Include="images\001-1_16.gif" />
+    <Content Include="images\001-1_20.gif" />
+    <Content Include="images\001-1_33.gif" />
+    <Content Include="images\001-1_51.gif" />
+    <Content Include="images\001-1_54.gif" />
+    <Content Include="images\001-1_55.gif" />
+    <Content Include="images\001.gif" />
+    <Content Include="images\002.gif" />
+    <Content Include="images\003.gif" />
+    <Content Include="images\004.gif" />
+    <Content Include="images\005.gif" />
+    <Content Include="images\006.gif" />
+    <Content Include="images\007.gif" />
+    <Content Include="images\008.gif" />
+    <Content Include="images\0n.gif" />
+    <Content Include="images\0r.gif" />
+    <Content Include="images\131.gif" />
+    <Content Include="images\1n.gif" />
+    <Content Include="images\1r.gif" />
+    <Content Include="images\268.gif" />
+    <Content Include="images\269.gif" />
+    <Content Include="images\270.gif" />
+    <Content Include="images\271.gif" />
+    <Content Include="images\272.gif" />
+    <Content Include="images\273.gif" />
+    <Content Include="images\274.gif" />
+    <Content Include="images\275.gif" />
+    <Content Include="images\276.gif" />
+    <Content Include="images\277.gif" />
+    <Content Include="images\278.gif" />
+    <Content Include="images\279.gif" />
+    <Content Include="images\280.gif" />
+    <Content Include="images\281.gif" />
+    <Content Include="images\282.gif" />
+    <Content Include="images\283.gif" />
+    <Content Include="images\284.gif" />
+    <Content Include="images\2n.gif" />
+    <Content Include="images\2r.gif" />
+    <Content Include="images\3n.gif" />
+    <Content Include="images\3r.gif" />
+    <Content Include="images\4n.gif" />
+    <Content Include="images\4r.gif" />
+    <Content Include="images\5n.gif" />
+    <Content Include="images\5r.gif" />
+    <Content Include="images\6n.gif" />
+    <Content Include="images\6r.gif" />
+    <Content Include="images\7n.gif" />
+    <Content Include="images\7r.gif" />
+    <Content Include="images\8n.gif" />
+    <Content Include="images\8r.gif" />
+    <Content Include="images\9n.gif" />
+    <Content Include="images\9r.gif" />
+    <Content Include="images\about16.gif" />
+    <Content Include="images\about32.gif" />
+    <Content Include="images\add.gif" />
+    <Content Include="images\add16.gif" />
+    <Content Include="images\add32.gif" />
+    <Content Include="images\a_te01.gif" />
+    <Content Include="images\a_te02.gif" />
+    <Content Include="images\b.GIF" />
+    <Content Include="images\b1.gif" />
+    <Content Include="images\b11-1.gif" />
+    <Content Include="images\b11-2.gif" />
+    <Content Include="images\b11.gif" />
+    <Content Include="images\b12.gif" />
+    <Content Include="images\b13-1.gif" />
+    <Content Include="images\b13-2.gif" />
+    <Content Include="images\b13.gif" />
+    <Content Include="images\b3.gif" />
+    <Content Include="images\b4.gif" />
+    <Content Include="images\b5.gif" />
+    <Content Include="images\Back.jpg" />
+    <Content Include="images\bar_00.gif" />
+    <Content Include="images\bar_01.gif" />
+    <Content Include="images\bar_02.gif" />
+    <Content Include="images\bar_03.gif" />
+    <Content Include="images\bar_04.gif" />
+    <Content Include="images\bar_05.gif" />
+    <Content Include="images\bar_06.gif" />
+    <Content Include="images\bar_07.gif" />
+    <Content Include="images\bar_08.gif" />
+    <Content Include="images\bar_09.gif" />
+    <Content Include="images\bar_10.gif" />
+    <Content Include="images\bbs16.gif" />
+    <Content Include="images\bbs32.gif" />
+    <Content Include="images\bb_01.jpg" />
+    <Content Include="images\bb_02.jpg" />
+    <Content Include="images\bb_03.jpg" />
+    <Content Include="images\bb_04.jpg" />
+    <Content Include="images\bb_05.jpg" />
+    <Content Include="images\bb_06.jpg" />
+    <Content Include="images\bb_07.jpg" />
+    <Content Include="images\bb_08.jpg" />
+    <Content Include="images\bb_09.jpg" />
+    <Content Include="images\bb_10.jpg" />
+    <Content Include="images\bb_11.jpg" />
+    <Content Include="images\bb_12.jpg" />
+    <Content Include="images\bb_13.jpg" />
+    <Content Include="images\bb_14.jpg" />
+    <Content Include="images\bb_15.jpg" />
+    <Content Include="images\bb_16.jpg" />
+    <Content Include="images\bb_17.jpg" />
+    <Content Include="images\bb_18.jpg" />
+    <Content Include="images\bb_19.jpg" />
+    <Content Include="images\bg.gif" />
+    <Content Include="images\bgx.GIF" />
+    <Content Include="images\bg_01.gif" />
+    <Content Include="images\bg_02.gif" />
+    <Content Include="images\bg_03.gif" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\bottom_01.gif" />
+    <Content Include="images\bottom_02.gif" />
+    <Content Include="images\bottom_03.gif" />
+    <Content Include="images\Briefcase16.gif" />
+    <Content Include="images\Briefcase32.gif" />
+    <Content Include="images\btnreview.GIF" />
+    <Content Include="images\btnsearch.gif" />
+    <Content Include="images\btn_modify.gif" />
+    <Content Include="images\btn_preview.gif" />
+    <Content Include="images\btn_quxiao.gif" />
+    <Content Include="images\btn_tijiao.gif" />
+    <Content Include="images\btn_xiayibu.jpg" />
+    <Content Include="images\button.gif" />
+    <Content Include="images\button_Activate.gif" />
+    <Content Include="images\button_add.gif" />
+    <Content Include="images\button_Back.gif" />
+    <Content Include="images\button_bg1.gif" />
+    <Content Include="images\button_cancel.gif" />
+    <Content Include="images\button_CancelService.gif" />
+    <Content Include="images\button_del.gif" />
+    <Content Include="images\button_edit.gif" />
+    <Content Include="images\button_first.gif" />
+    <Content Include="images\button_FormatReports.gif" />
+    <Content Include="images\button_insert.gif" />
+    <Content Include="images\button_last.gif" />
+    <Content Include="images\button_MakeReports.gif" />
+    <Content Include="images\button_next.gif" />
+    <Content Include="images\button_previous.gif" />
+    <Content Include="images\button_save.gif" />
+    <Content Include="images\button_search.GIF" />
+    <Content Include="images\button_See.gif" />
+    <Content Include="images\button_Sel.gif" />
+    <Content Include="images\button_Send.gif" />
+    <Content Include="images\button_Trial.gif" />
+    <Content Include="images\button_View.gif" />
+    <Content Include="images\c6.gif" />
+    <Content Include="images\card16.gif" />
+    <Content Include="images\card32.gif" />
+    <Content Include="images\codematic.jpg" />
+    <Content Include="images\company16.gif" />
+    <Content Include="images\company32.gif" />
+    <Content Include="images\css.css" />
+    <Content Include="images\d2.gif" />
+    <Content Include="images\d3.gif" />
+    <Content Include="images\dbsx_01.gif" />
+    <Content Include="images\dbsx_02.gif" />
+    <Content Include="images\delete.gif" />
+    <Content Include="images\desktitle.gif" />
+    <Content Include="images\desktop16.gif" />
+    <Content Include="images\desktop32.gif" />
+    <Content Include="images\desktop_01.gif" />
+    <Content Include="images\desktop_02.gif" />
+    <Content Include="images\desktop_03.gif" />
+    <Content Include="images\dsj16.gif" />
+    <Content Include="images\dsj32.gif" />
+    <Content Include="images\edit.gif" />
+    <Content Include="images\ErrorMessage.txt" />
+    <Content Include="images\Excel.gif" />
+    <Content Include="images\f3.gif" />
+    <Content Include="images\f4.gif" />
+    <Content Include="images\Find.gif" />
+    <Content Include="images\find16.gif" />
+    <Content Include="images\find32.gif" />
+    <Content Include="images\firstg.gif" />
+    <Content Include="images\firstg1.gif" />
+    <Content Include="images\firstn.gif" />
+    <Content Include="images\firstn1.gif" />
+    <Content Include="images\firstpage_01.gif" />
+    <Content Include="images\firstpage_02.gif" />
+    <Content Include="images\firstpage_03.gif" />
+    <Content Include="images\folder16.gif" />
+    <Content Include="images\folder32.gif" />
+    <Content Include="images\foldergreen_16.gif" />
+    <Content Include="images\ger16.gif" />
+    <Content Include="images\ger32.gif" />
+    <Content Include="images\gongg16.gif" />
+    <Content Include="images\gongg32.gif" />
+    <Content Include="images\gongzkp16.gif" />
+    <Content Include="images\gongzkp32.gif" />
+    <Content Include="images\h2.gif" />
+    <Content Include="images\h3.gif" />
+    <Content Include="images\h4.gif" />
+    <Content Include="images\h5.gif" />
+    <Content Include="images\help16.gif" />
+    <Content Include="images\help32.gif" />
+    <Content Include="images\image.gif" />
+    <Content Include="images\imgbtn\imgbtn_Add.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Add1.jpg" />
+    <Content Include="images\imgbtn\imgbtn_AddBrotherNode.jpg" />
+    <Content Include="images\imgbtn\imgbtn_AddChildNode.jpg" />
+    <Content Include="images\imgbtn\imgbtn_AddRootNode.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Complete.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Date.gif" />
+    <Content Include="images\imgbtn\imgbtn_Date.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Del.jpg" />
+    <Content Include="images\imgbtn\imgbtn_DelNode.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Edit.jpg" />
+    <Content Include="images\imgbtn\imgbtn_p.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Search.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Sure.jpg" />
+    <Content Include="images\imgbtn\imgbtn_System.jpg" />
+    <Content Include="images\imgbtn\imgbtn_task_execute.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Underling_Day.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Underling_Month.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Underling_Week.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Underling_workmonth.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Underling_workmonth1.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Underling_workQuarte.jpg" />
+    <Content Include="images\imgbtn\imgbtn_Up.jpg" />
+    <Content Include="images\imgbtn\imgbtn_UpFile.jpg" />
+    <Content Include="images\imgbtn\imgbtn_UpImg.jpg" />
+    <Content Include="images\imgbtn\img_btn_Date.jpg" />
+    <Content Include="images\imgbtn\link_Exit.gif" />
+    <Content Include="images\imgbtn\page_icon.gif" />
+    <Content Include="images\imgbtn\user_message.jpg" />
+    <Content Include="images\imgbtn\user_praise1.jpg" />
+    <Content Include="images\imgbtn\user_praise2.jpg" />
+    <Content Include="images\imgbtn\user_praise3.jpg" />
+    <Content Include="images\indexbg.gif" />
+    <Content Include="images\index_07.gif" />
+    <Content Include="images\index_08.gif" />
+    <Content Include="images\index_09.gif" />
+    <Content Include="images\index_10.gif" />
+    <Content Include="images\index_11.gif" />
+    <Content Include="images\index_20.gif" />
+    <Content Include="images\index_21.gif" />
+    <Content Include="images\index_22.gif" />
+    <Content Include="images\index_23.gif" />
+    <Content Include="images\index_24.gif" />
+    <Content Include="images\index_25.gif" />
+    <Content Include="images\index_33.gif" />
+    <Content Include="images\index_35.gif" />
+    <Content Include="images\index_37.gif" />
+    <Content Include="images\index_39.gif" />
+    <Content Include="images\index_bj.gif" />
+    <Content Include="images\in_bg.gif" />
+    <Content Include="images\key.gif" />
+    <Content Include="images\lastg.gif" />
+    <Content Include="images\lastg2.gif" />
+    <Content Include="images\lastn.gif" />
+    <Content Include="images\lastn2.gif" />
+    <Content Include="images\left-1-1.gif" />
+    <Content Include="images\left-1-2.gif" />
+    <Content Include="images\left-1-3.gif" />
+    <Content Include="images\left-1.gif" />
+    <Content Include="images\left-2-1.gif" />
+    <Content Include="images\left-2-2.gif" />
+    <Content Include="images\left-2-3.gif" />
+    <Content Include="images\left-2.gif" />
+    <Content Include="images\left-3-1.gif" />
+    <Content Include="images\left-3-2.gif" />
+    <Content Include="images\left-3-3.gif" />
+    <Content Include="images\left-3.gif" />
+    <Content Include="images\left-bj-1.gif" />
+    <Content Include="images\left-bj-2.gif" />
+    <Content Include="images\left-bj-3.gif" />
+    <Content Include="images\left-bj.gif" />
+    <Content Include="images\Loading.gif" />
+    <Content Include="images\login.css" />
+    <Content Include="images\LoginBak.jpg" />
+    <Content Include="images\login_p_img02.gif" />
+    <Content Include="images\login_p_img03.gif" />
+    <Content Include="images\login_p_img04.gif" />
+    <Content Include="images\login_p_img05.gif" />
+    <Content Include="images\login_p_img06.gif" />
+    <Content Include="images\login_p_img07.gif" />
+    <Content Include="images\login_p_img11.gif" />
+    <Content Include="images\login_p_img12.gif" />
+    <Content Include="images\logo.GIF" />
+    <Content Include="images\logob.GIF" />
+    <Content Include="images\logout1.gif" />
+    <Content Include="images\mag16.gif" />
+    <Content Include="images\mag32.gif" />
+    <Content Include="images\mail16.gif" />
+    <Content Include="images\mail32.gif" />
+    <Content Include="images\main_01.gif" />
+    <Content Include="images\main_04.gif" />
+    <Content Include="images\main_05.gif" />
+    <Content Include="images\main_06.gif" />
+    <Content Include="images\main_08.gif" />
+    <Content Include="images\main_09.gif" />
+    <Content Include="images\member_t04.gif" />
+    <Content Include="images\MenuImg\1.gif" />
+    <Content Include="images\MenuImg\2.gif" />
+    <Content Include="images\MenuImg\216.GIF" />
+    <Content Include="images\MenuImg\288.GIF" />
+    <Content Include="images\MenuImg\666.gif" />
+    <Content Include="images\MenuImg\about16.gif" />
+    <Content Include="images\MenuImg\addremoveprograms.gif" />
+    <Content Include="images\MenuImg\b.gif" />
+    <Content Include="images\MenuImg\bbs16.gif" />
+    <Content Include="images\MenuImg\Briefcase16.gif" />
+    <Content Include="images\MenuImg\controlpanel.gif" />
+    <Content Include="images\MenuImg\copy.gif" />
+    <Content Include="images\MenuImg\delete.gif" />
+    <Content Include="images\MenuImg\down.gif" />
+    <Content Include="images\MenuImg\email.gif" />
+    <Content Include="images\MenuImg\find16.gif" />
+    <Content Include="images\MenuImg\folder16.gif" />
+    <Content Include="images\MenuImg\foldergreen_16.gif" />
+    <Content Include="images\MenuImg\ger16.gif" />
+    <Content Include="images\MenuImg\help16.gif" />
+    <Content Include="images\MenuImg\icon_thumbnails.gif" />
+    <Content Include="images\MenuImg\key.gif" />
+    <Content Include="images\MenuImg\move.gif" />
+    <Content Include="images\MenuImg\movie.gif" />
+    <Content Include="images\MenuImg\moviplay.gif" />
+    <Content Include="images\MenuImg\mydocuments.gif" />
+    <Content Include="images\MenuImg\mynetwork.gif" />
+    <Content Include="images\MenuImg\news16.gif" />
+    <Content Include="images\MenuImg\out16.gif" />
+    <Content Include="images\MenuImg\person.gif" />
+    <Content Include="images\MenuImg\print.gif" />
+    <Content Include="images\MenuImg\Programs16.gif" />
+    <Content Include="images\MenuImg\publish.gif" />
+    <Content Include="images\MenuImg\quanx16.gif" />
+    <Content Include="images\MenuImg\rename.gif" />
+    <Content Include="images\MenuImg\systeminfo.gif" />
+    <Content Include="images\MenuImg\thumbnails.gif" />
+    <Content Include="images\MenuImg\times.gif" />
+    <Content Include="images\MenuImg\ts16.gif" />
+    <Content Include="images\MenuImg\user16.gif" />
+    <Content Include="images\MenuImg\vote16.gif" />
+    <Content Include="images\MenuImg\xinx16.gif" />
+    <Content Include="images\MenuImg\zhut16.gif" />
+    <Content Include="images\MenuImg\zjsp16.gif" />
+    <Content Include="images\Menu\Card.gif" />
+    <Content Include="images\Menu\empphoto.gif" />
+    <Content Include="images\Menu\img-folder-open.gif" />
+    <Content Include="images\Menu\img-folder.gif" />
+    <Content Include="images\Menu\img-globe.gif" />
+    <Content Include="images\Menu\man.gif" />
+    <Content Include="images\Menu\print.gif" />
+    <Content Include="images\message16.gif" />
+    <Content Include="images\message32.gif" />
+    <Content Include="images\minus.gif" />
+    <Content Include="images\minus.jpg" />
+    <Content Include="images\module16.gif" />
+    <Content Include="images\module32.gif" />
+    <Content Include="images\more.gif" />
+    <Content Include="images\more1.gif" />
+    <Content Include="images\moren.gif" />
+    <Content Include="images\myfile16.gif" />
+    <Content Include="images\new.gif" />
+    <Content Include="images\news.gif" />
+    <Content Include="images\news16.gif" />
+    <Content Include="images\news32.gif" />
+    <Content Include="images\nextg.gif" />
+    <Content Include="images\nextn.gif" />
+    <Content Include="images\out16.gif" />
+    <Content Include="images\out32.gif" />
+    <Content Include="images\plan16.gif" />
+    <Content Include="images\plan32.gif" />
+    <Content Include="images\plus.gif" />
+    <Content Include="images\plus.jpg" />
+    <Content Include="images\point07.gif" />
+    <Content Include="images\prevg.gif" />
+    <Content Include="images\prevn.gif" />
+    <Content Include="images\PRINTER.GIF" />
+    <Content Include="images\Programs16.gif" />
+    <Content Include="images\Programs32.gif" />
+    <Content Include="images\progress.gif" />
+    <Content Include="images\quanx16.gif" />
+    <Content Include="images\quanx32.gif" />
+    <Content Include="images\right-1.gif" />
+    <Content Include="images\right-2.gif" />
+    <Content Include="images\right-3.gif" />
+    <Content Include="images\right-bj-1.gif" />
+    <Content Include="images\right-bj-2.gif" />
+    <Content Include="images\right-bj-3.gif" />
+    <Content Include="images\right-bj.gif" />
+    <Content Include="images\right.gif" />
+    <Content Include="images\save.gif" />
+    <Content Include="images\script.GIF" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\style.css" />
+    <Content Include="images\tabPage8-1.gif" />
+    <Content Include="images\tabPage8-2.gif" />
+    <Content Include="images\tabPage8-3.gif" />
+    <Content Include="images\tabPage8-4.gif" />
+    <Content Include="images\tabPage8-5.gif" />
+    <Content Include="images\tabPage8-6.gif" />
+    <Content Include="images\tabPage8-7.gif" />
+    <Content Include="images\tabPage8-8.gif" />
+    <Content Include="images\tel16.gif" />
+    <Content Include="images\tel32.gif" />
+    <Content Include="images\top-1-1.gif" />
+    <Content Include="images\top-1-2.gif" />
+    <Content Include="images\top-1-3.gif" />
+    <Content Include="images\top-1.gif" />
+    <Content Include="images\top-11.gif" />
+    <Content Include="images\top-2-1.gif" />
+    <Content Include="images\top-2-2.gif" />
+    <Content Include="images\top-2-3.gif" />
+    <Content Include="images\top-2.gif" />
+    <Content Include="images\top-3-1.gif" />
+    <Content Include="images\top-3-2.gif" />
+    <Content Include="images\top-3-3.gif" />
+    <Content Include="images\top-3.gif" />
+    <Content Include="images\top-4-1.gif" />
+    <Content Include="images\top-4-2.gif" />
+    <Content Include="images\top-4-3.gif" />
+    <Content Include="images\top-4.gif" />
+    <Content Include="images\top-5-1.gif" />
+    <Content Include="images\top-5-2.gif" />
+    <Content Include="images\top-5-3.gif" />
+    <Content Include="images\top-5.gif" />
+    <Content Include="images\top-bj-1.gif" />
+    <Content Include="images\top-bj-2.gif" />
+    <Content Include="images\top-bj-3.gif" />
+    <Content Include="images\top-bj.gif" />
+    <Content Include="images\topbar_01.jpg" />
+    <Content Include="images\topbar_02.jpg" />
+    <Content Include="images\topbar_03.jpg" />
+    <Content Include="images\tree_dh.gif" />
+    <Content Include="images\ts.gif" />
+    <Content Include="images\ts16.gif" />
+    <Content Include="images\ts32.gif" />
+    <Content Include="images\tubiao.gif" />
+    <Content Include="images\tubiao_01.GIF" />
+    <Content Include="images\tubiao_02.gif" />
+    <Content Include="images\user16.gif" />
+    <Content Include="images\user32.gif" />
+    <Content Include="images\vote16.gif" />
+    <Content Include="images\vote32.gif" />
+    <Content Include="images\x16.gif" />
+    <Content Include="images\x32.gif" />
+    <Content Include="images\xinx16.gif" />
+    <Content Include="images\xinx32.gif" />
+    <Content Include="images\yw16.gif" />
+    <Content Include="images\yw32.gif" />
+    <Content Include="images\zhut16.gif" />
+    <Content Include="images\zhut32.gif" />
+    <Content Include="images\zjsp16.gif" />
+    <Content Include="images\zjsp32.gif" />
+    <Content Include="images\zu-top_3.gif" />
+    <Content Include="images\zu_bot_1.gif" />
+    <Content Include="images\zu_bot_2.gif" />
+    <Content Include="images\zu_bot_3.gif" />
+    <Content Include="images\zu_bot_4.gif" />
+    <Content Include="images\zu_bot_5.gif" />
+    <Content Include="images\zu_bot_6.gif" />
+    <Content Include="images\zu_bot_7.gif" />
+    <Content Include="images\zu_bot_8.gif" />
+    <Content Include="images\zu_mid_1.gif" />
+    <Content Include="images\zu_mid_2.gif" />
+    <Content Include="images\zu_mid_3.gif" />
+    <Content Include="images\zu_mid_4.gif" />
+    <Content Include="images\zu_mid_5.gif" />
+    <Content Include="images\zu_mid_6.gif" />
+    <Content Include="images\zu_mid_7.gif" />
+    <Content Include="images\zu_mid_8.gif" />
+    <Content Include="images\zu_top_1.gif" />
+    <Content Include="images\zu_top_2.gif" />
+    <Content Include="images\zu_top_3.gif" />
+    <Content Include="images\zu_top_4.gif" />
+    <Content Include="images\zu_top_5.gif" />
+    <Content Include="images\zu_top_6.gif" />
+    <Content Include="images\zu_top_7.gif" />
+    <Content Include="images\zu_top_8.gif" />
+    <Content Include="js\Public.js" />
+    <Content Include="js\validate.js" />
+    <Content Include="Main.htm" />
+    <Content Include="SendNotice.aspx" />
+    <Content Include="Spliter.aspx" />
+    <Content Include="Style.css" />
+    <Content Include="Top.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttendRecordTeacher.aspx.cs">
+      <DependentUpon>AttendRecordTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendRecordTeacher.aspx.designer.cs">
+      <DependentUpon>AttendRecordTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendShift.aspx.cs">
+      <DependentUpon>AttendShift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendShift.aspx.designer.cs">
+      <DependentUpon>AttendShift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendShiftAdd.aspx.cs">
+      <DependentUpon>AttendShiftAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendShiftAdd.aspx.designer.cs">
+      <DependentUpon>AttendShiftAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendTime.aspx.cs">
+      <DependentUpon>AttendTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendTime.aspx.designer.cs">
+      <DependentUpon>AttendTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendTimeAdd.aspx.cs">
+      <DependentUpon>AttendTimeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendTimeAdd.aspx.designer.cs">
+      <DependentUpon>AttendTimeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDownload.aspx.cs">
+      <DependentUpon>FileDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDownload.aspx.designer.cs">
+      <DependentUpon>FileDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filter.aspx.cs">
+      <DependentUpon>Filter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filter.aspx.designer.cs">
+      <DependentUpon>Filter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FJUpload.aspx.cs">
+      <DependentUpon>FJUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FJUpload.aspx.designer.cs">
+      <DependentUpon>FJUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="left.aspx.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="left.aspx.designer.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakeCardForTeacher.aspx.cs">
+      <DependentUpon>MakeCardForTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakeCardForTeacher.aspx.designer.cs">
+      <DependentUpon>MakeCardForTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.aspx.cs">
+      <DependentUpon>Role.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Role.aspx.designer.cs">
+      <DependentUpon>Role.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoleAdd.aspx.cs">
+      <DependentUpon>RoleAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoleAdd.aspx.designer.cs">
+      <DependentUpon>RoleAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RolePopedom.aspx.cs">
+      <DependentUpon>RolePopedom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RolePopedom.aspx.designer.cs">
+      <DependentUpon>RolePopedom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendNotice.aspx.cs">
+      <DependentUpon>SendNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendNotice.aspx.designer.cs">
+      <DependentUpon>SendNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendNoticeAdd.aspx.cs">
+      <DependentUpon>SendNoticeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendNoticeAdd.aspx.designer.cs">
+      <DependentUpon>SendNoticeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendNotice_F.aspx.cs">
+      <DependentUpon>SendNotice_F.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendNotice_F.aspx.designer.cs">
+      <DependentUpon>SendNotice_F.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendNotice_R.aspx.cs">
+      <DependentUpon>SendNotice_R.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendNotice_R.aspx.designer.cs">
+      <DependentUpon>SendNotice_R.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendNotice_S.aspx.cs">
+      <DependentUpon>SendNotice_S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendNotice_S.aspx.designer.cs">
+      <DependentUpon>SendNotice_S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendNotice_V.aspx.cs">
+      <DependentUpon>SendNotice_V.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendNotice_V.aspx.designer.cs">
+      <DependentUpon>SendNotice_V.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Service.asmx.cs">
+      <DependentUpon>Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShowMessage.aspx.cs">
+      <DependentUpon>ShowMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowMessage.aspx.designer.cs">
+      <DependentUpon>ShowMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Spliter.aspx.cs">
+      <DependentUpon>Spliter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Spliter.aspx.designer.cs">
+      <DependentUpon>Spliter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="TimeBookReport.aspx.cs">
+      <DependentUpon>TimeBookReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeBookReport.aspx.designer.cs">
+      <DependentUpon>TimeBookReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAttendShift.aspx.cs">
+      <DependentUpon>UserAttendShift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserAttendShift.aspx.designer.cs">
+      <DependentUpon>UserAttendShift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tree_Index.aspx.cs">
+      <DependentUpon>tree_Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tree_Index.aspx.designer.cs">
+      <DependentUpon>tree_Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tree_Left.aspx.cs">
+      <DependentUpon>tree_Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tree_Left.aspx.designer.cs">
+      <DependentUpon>tree_Left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tree_Operate.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>tree_Operate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tree_Operate.aspx.designer.cs">
+      <DependentUpon>tree_Operate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tree_Operate_Edit.aspx.cs">
+      <DependentUpon>tree_Operate_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tree_Operate_Edit.aspx.designer.cs">
+      <DependentUpon>tree_Operate_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tree_operate_move.aspx.cs">
+      <DependentUpon>tree_operate_move.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tree_operate_move.aspx.designer.cs">
+      <DependentUpon>tree_operate_move.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tree_top.aspx.cs">
+      <DependentUpon>tree_top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tree_top.aspx.designer.cs">
+      <DependentUpon>tree_top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Filter.ascx.cs">
+      <DependentUpon>Filter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Filter.ascx.designer.cs">
+      <DependentUpon>Filter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDepartment.aspx.cs">
+      <DependentUpon>UserDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDepartment.aspx.designer.cs">
+      <DependentUpon>UserDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersAdd.aspx.cs">
+      <DependentUpon>UsersAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersAdd.aspx.designer.cs">
+      <DependentUpon>UsersAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Top.aspx.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Top.aspx.designer.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Default.skin" />
+    <Content Include="App_Themes\Default\Image.skin" />
+    <Content Include="AttendRecordTeacher.aspx" />
+    <Content Include="AttendShift.aspx" />
+    <Content Include="AttendShiftAdd.aspx" />
+    <Content Include="AttendTime.aspx" />
+    <Content Include="AttendTimeAdd.aspx" />
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="bin\FredCK.FCKeditorV2.dll" />
+    <Content Include="bin\msplus.datepicker.dll" />
+    <Content Include="bin\XCProf.dll" />
+    <Content Include="FileDownload.aspx" />
+    <Content Include="Filter.aspx" />
+    <Content Include="FJUpload.aspx" />
+    <Content Include="img\Agent.jpg" />
+    <Content Include="img\TeacherLogin.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="left.aspx" />
+    <Content Include="Logout.aspx" />
+    <None Include="images\button.psd" />
+    <None Include="images\imgbtn\Thumbs.db" />
+    <None Include="images\MenuImg\Thumbs.db" />
+    <None Include="images\Menu\Thumbs.db" />
+    <None Include="images\Thumbs.db" />
+    <None Include="images\top-1.psd" />
+    <Content Include="Enterprise.config" />
+    <Content Include="Main.aspx" />
+    <Content Include="MakeCardForTeacher.aspx" />
+    <Content Include="Role.aspx" />
+    <Content Include="RoleAdd.aspx" />
+    <Content Include="RolePopedom.aspx" />
+    <Content Include="SendNoticeAdd.aspx" />
+    <Content Include="SendNotice_F.aspx" />
+    <Content Include="SendNotice_R.aspx" />
+    <Content Include="SendNotice_S.aspx" />
+    <Content Include="SendNotice_V.aspx" />
+    <Content Include="Services\Filter\SendNoticeV.xml" />
+    <Content Include="Services\Service.asmx" />
+    <Content Include="ShowMessage.aspx" />
+    <Content Include="TimeBookReport.aspx" />
+    <Content Include="UserAttendShift.aspx" />
+    <Content Include="tree_Index.aspx" />
+    <Content Include="tree_Left.aspx" />
+    <Content Include="tree_Operate.aspx" />
+    <Content Include="tree_Operate_Edit.aspx" />
+    <Content Include="tree_operate_move.aspx" />
+    <Content Include="tree_top.aspx" />
+    <Content Include="UserControl\Filter.ascx" />
+    <Content Include="UserDepartment.aspx" />
+    <Content Include="UsersAdd.aspx" />
+    <Content Include="Users.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UploadFile\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1313</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

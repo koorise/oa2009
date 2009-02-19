@@ -1,0 +1,48 @@
+td { font-size: 9pt; }
+a { color: #000000; text-decoration: none}
+a:hover { color:#E78a29; text-decoration: none}
+
+.TabelBorderColor { border-color: #4F7FC9; }
+
+.GridViewCSS th
+{
+ border-color:#4F7FC9;
+}
+.GridViewCSS td{
+ border-color:#4F7FC9;
+}
+.button {
+	CLEAR: none; BORDER-RIGHT: #51649e 1px solid; BORDER-TOP: #51649e 1px solid; MARGIN-TOP: 2px; FONT-SIZE: 12px; FLOAT: none; BACKGROUND-IMAGE: url(images/button_bg1.gif); BORDER-LEFT: #51649e 1px solid; CURSOR: hand; COLOR: #40507d; PADDING-TOP: 2px; BORDER-BOTTOM: #51649e 1px solid; HEIGHT: 22px
+}
+.inputNoUser{
+	CLEAR: none; BORDER-RIGHT: #51649e 1px solid; BORDER-TOP: #51649e 1px solid; MARGIN-TOP: 2px; FONT-SIZE: 12px; FLOAT: none; BACKGROUND-IMAGE: url(images/button_bg1.gif); BORDER-LEFT: #51649e 1px solid; CURSOR: hand; COLOR: #40507d; PADDING-TOP: 2px; BORDER-BOTTOM: #51649e 1px solid; HEIGHT: 22px
+}
+.TabelNode
+{
+    background-color:White; BORDER-RIGHT: #51649e 1px solid; BORDER-TOP: #51649e 1px solid; MARGIN-TOP: 2px; BORDER-LEFT: #51649e 1px solid;COLOR: #40507d; PADDING-TOP: 2px; BORDER-BOTTOM: #51649e 1px solid;
+}
+.TabelWhiteBorder
+{
+    background-color:White; BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; MARGIN-TOP: 2px; BORDER-LEFT: #000000 1px solid;COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: #000000 1px solid;
+}
+ .abc
+ {   
+    position:absolute;   
+    left:1px;   
+    top:1px;   
+    width:100%;   
+    height:100%;   
+    z-index:0;   
+    background-repeat: repeat;   
+    background-color:white;   
+    FILTER: alpha(opacity=60);    
+    opacity: 0.6;   
+}   
+.abc1 {   
+    position:absolute;   
+    left:350px;   
+    top:240px;   
+    width:300px;   
+    height:100px;   
+    z-index:0;   
+}

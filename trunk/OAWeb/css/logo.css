@@ -1,0 +1,109 @@
+a, a:visited {text-decoration: none; color: #223399;}
+A:hover	{text-decoration: underline; color: #ff5555;}
+
+body{
+	margin:				0px;
+	border: solid 1px;
+	margin-left: 0px;
+	border-color: #999999;
+	background-color:	#dbccac;
+	font-size:			12px;
+	font-family:		Arial,ËÎÌו,Arial,Sans-serif;
+	line-height:		18px;
+}
+
+SELECT{
+	font-size:12px;
+}
+
+TEXTAREA{
+	font-size:12px;
+	border: 1px solid #a0a0a0;
+	background-color:transparent;
+}
+
+.edbox{
+	font-size:12px;
+	border: 1px solid #a0a0a0;
+	background-color:transparent;
+}
+
+.edline{
+	font-size:12px;
+	border: none;
+	border-bottom: 1px solid #a0a0a0;
+	background-color:transparent;
+}
+
+.ednone{
+	font-size:12px;
+	border: none;
+	background-color:#d4e4d8;
+}
+
+.edboxdisable{
+	font-size:12px;
+	border: 1px solid #aaaaaa;
+	background-color:transparent;
+	color: #555555;
+}
+
+.edlinedisable{
+	font-size:12px;
+	border: none;
+	border-bottom: 1px solid #aaaaaa;
+	background-color:transparent;
+	color: #555555;
+}
+
+.ednonedisable{
+	font-size:12px;
+	border: none;
+	background-color:transparent;
+	color: #777777;
+}
+
+.selectOff{
+	font-size:12px;
+	cursor:default;
+	border:none;
+	border-bottom: 1px solid #aaaaaa;
+	background-color:transparent;
+	overflow:hidden;
+}
+.selectOn{
+	position:absolute;
+	visibility:hidden;
+	z-index:1;
+	cursor:default;
+	font-size:12px;
+	font-family:ËÎÌו,Helvetica,Arial,Sans-Serif;
+	border: 1px solid;
+	top:-1000px;
+	left:-1000px;
+	width:0;
+	height:-1000;
+	overflow:hidden;
+	background-color:#f0f0f0;
+}
+.selectItem{
+	font-size:12px;
+	line-height:16px;
+	width:100%;
+}
+.tdsmall {font-size: 12px; line-height:16px;padding-left:2px;padding-right:2px;}
+
+.td {font-size: 12px;line-height:20px;padding-left:2px;padding-right:2px;}
+
+
+.white {font-size: 12px;color: #eeeeee}
+
+
+
+.ttTable{
+	color: #403020;
+	font-size: 12px;
+	font-weight: bold;
+	line-height:20px;
+}
+

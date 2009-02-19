@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assemblies Version="1073741833">
+  <Assembly Name="AspNetPager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4" Image="5b568f30-3c5e-4fbe-9bbc-81ab25171d94" Timestamp="633694004400000000" />
+  <Assembly Name="FredCK.FCKeditorV2, Version=2.2.2106.29420, Culture=neutral, PublicKeyToken=4f86767c9b519a06" Image="2aaa1f71-eabf-4638-8aed-fde2b33071c5" Timestamp="633694004400000000" />
+  <Assembly Name="MSPlus.DatePicker, Version=1.1.906.0, Culture=neutral" Image="7bfb97a7-a2b9-4b5c-90d2-f50b11d549ed" Timestamp="633694004400000000" />
+  <Assembly Name="XCProf, Version=0.0.0.0, Culture=neutral" Image="5a259fea-3653-408c-b64d-c344b69f90f6" Timestamp="633694004400000000" />
+  <Assembly Name="JetBrains.Annotations, Version=4.0.819.19, Culture=neutral, PublicKeyToken=1010a0d8d6380325" Image="8736a535-6403-499a-a8f8-04fd2f6aa7d1" Timestamp="633486167860000000" XmlDocIndexTimestamp="633486167860000000" />
+</Assemblies>

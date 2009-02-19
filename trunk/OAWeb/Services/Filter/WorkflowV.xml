@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<Table>
+  <jxt>
+    <FieldName>TeacherName</FieldName>  
+    <Comment>发送人</Comment>
+    <Control>TextBox</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>SendTime</FieldName>  
+    <Comment>发送时间</Comment>
+    <Control>datetime</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>Title</FieldName>  
+    <Comment>标题</Comment>
+    <Control>TextBox</Control>
+    <DDLTable></DDLTable>
+  </jxt>
+  <jxt>
+    <FieldName>State</FieldName>  
+    <Comment>状态</Comment>
+    <Control>dropdownlist</Control>
+    <DDLTable>select '1','待发送' union all select '2','已发送' union all select '3','被退回' union all select '4','已完成' union all select '4','已被撤消'</DDLTable>
+  </jxt>
+</Table>
